@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {View, Text, Image }  from 'react-native'
+import {View, Text, Image, TextInput, TouchableOpacity }  from 'react-native'
 import Constants from 'expo-constants'
 
 const StatusBarHeight = Constants.statusBarHeight;
@@ -12,7 +12,7 @@ export const Colors = {
       background: '#FFFFFF'
 }
 
-const {primary, secondary, neutral} = Colors;
+const {primary, secondary, neutral, background} = Colors;
 
 export const StyledContainer = styled.View`
     flex: 1;
@@ -34,8 +34,54 @@ export const PageLogo = styled.Image`
 
 export const PageTitle = styled.Text`
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    color: ${neutral};
+    color: ${primary};
     padding: 10px;
 `;
+
+export const SubTitle = styled.Text`
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: ${neutral}
+`;
+
+export const StyledFormArea = styled.View`
+    width: 590%;
+`;
+
+export const StyledTextInput = styled.TextInput`
+    background-color: ${background};
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 5px;
+    font-size: 16px;
+    border-bottom;
+    height: 68px;
+    margin-vertical: 3px;
+    margin-bottom: 10px;
+    color: ${neutral}
+`;
+
+export const StylesInputLabel = styled.Text`
+    color: ${neutral};
+    font-size: 13px;
+    text-align: left;
+`;
+
+export const LeftIcon = styled.View`
+    left: 15px;
+    front-size: 38px;
+    position: abosolute;
+    i-index: 1;
+`;
+
+export const RightIcon = styled.TouchableOpacity`
+    left: 15px;
+    front-size: 38px;
+    position: abosolute;
+    i-index: 1;
+`;
+
