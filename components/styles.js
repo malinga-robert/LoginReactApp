@@ -65,7 +65,7 @@ export const StyledTextInput = styled.TextInput`
     color: ${neutral}
 `;
 
-export const StylesInputLabel = styled.Text`
+export const StyledInputLabel = styled.Text`
     color: ${neutral};
     font-size: 13px;
     text-align: left;
@@ -79,9 +79,35 @@ export const LeftIcon = styled.View`
 `;
 
 export const RightIcon = styled.TouchableOpacity`
-    left: 15px;
+    right: 15px;
     front-size: 38px;
     position: abosolute;
     i-index: 1;
 `;
 
+export const StyledButton = styled.TouchableOpacity`
+    padding: 15px;
+    background-color: ${primary};
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-vertical: 5px;
+    height: 60px;
+`;
+
+export const ButtonText = styled.Text`
+    color: ${background};
+    font-size: 16px;
+`;
+
+export const MessageBox = styled.Text`
+    text-align: center;
+    font-size: 13px;
+`;
+
+export const Line = styled.View`
+    height: 1px;
+    width; 100%;
+    background-color: ${background};
+    margin-vertical: 10px;
+`;
