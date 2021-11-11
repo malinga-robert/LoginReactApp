@@ -22,7 +22,11 @@ import {
   StyledButton,
   ButtonText,
   MessageBox,
-  Line
+  Line,
+  ExtraView,
+  ExtraText,
+  TextLine,
+  TextLinkContent
 } from '../components/styles';
 
 //colors
@@ -35,7 +39,7 @@ export default function Login() {
     <StyledContainer>
       <StatusBar style="dark" />
       <InnerContainer>
-        {/* <PageLogo resizeMode="cover" source={require('../assets/SplashScreen.png')} /> */}
+        <PageLogo resizeMode="cover" source={require('../assets/SplashScreen.png')} />
         <PageTitle>Log In to Your Mentor Account</PageTitle>
         <Formik
           initialValues={{ email: ``, password: `` }}
@@ -78,6 +82,13 @@ export default function Login() {
                   </ButtonText>
               </StyledButton>
               <Line />
+
+              <ExtraView>
+                <ExtraText>Don't have an accont already? </ExtraText>
+                <TextLine>
+                  <TextLinkContent>Sign up here!</TextLinkContent>
+                </TextLine>
+              </ExtraView>
             </StyledFormArea>
           )}
         </Formik>

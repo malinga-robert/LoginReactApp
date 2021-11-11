@@ -58,7 +58,7 @@ export const StyledTextInput = styled.TextInput`
     padding-left: 55px;
     padding-right: 5px;
     font-size: 16px;
-    border-bottom;
+    border-color: ${neutral};
     height: 68px;
     margin-vertical: 3px;
     margin-bottom: 10px;
@@ -73,16 +73,16 @@ export const StyledInputLabel = styled.Text`
 
 export const LeftIcon = styled.View`
     left: 15px;
-    front-size: 38px;
-    position: abosolute;
-    i-index: 1;
+    font-size: 38px;
+    position: absolute;
+    z-index: 1;
 `;
 
 export const RightIcon = styled.TouchableOpacity`
     right: 15px;
-    front-size: 38px;
-    position: abosolute;
-    i-index: 1;
+    font-size: 38px;
+    position: absolute;
+    z-index: 1;
 `;
 
 export const StyledButton = styled.TouchableOpacity`
@@ -108,6 +108,30 @@ export const MessageBox = styled.Text`
 export const Line = styled.View`
     height: 1px;
     width; 100%;
-    background-color: ${background};
+    background-color: ${neutral};
     margin-vertical: 10px;
 `;
+
+export const ExtraView = styled.View`
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+`
+
+export const ExtraText = styled.Text`
+    justify-content: center;
+    align-content: center;
+    color: ${neutral};
+    font-size: 15px;
+`
+
+export const TextLine = styled.TouchableOpacity`
+    justify-content: center;
+    align-content: center;
+`
+
+export const TextLinkContent = styled.Text`
+    color: ${primary}
+    font-size: 15px;
+`
